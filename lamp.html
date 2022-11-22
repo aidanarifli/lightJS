@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0px;
+            bottom: 0px;
+            background-color: rgb(41, 1, 1);
+        }
+        img{
+           margin-left: 300px;
+           margin-top: 30px;
+
+        }
+        button{
+            
+            
+
+           margin-left: auto;
+           margin-right: auto;
+
+        }
+
+    </style>
+</head>
+<body>
+    <script>
+        function light(ld){
+            var pic;
+            if (ld==0){
+                pic="turn_on.jpg";
+
+            }
+            else{
+                pic="turn_off.jpg"
+            }
+            document.getElementById('lamp').src=pic;
+        }
+    </script>
+    <img id="lamp" src="turn_on.jpg">
+    <button type="button" onclick="light(0)">TURN ON</button>
+    <button type="button" onclick="light(1)">TURN OF</button>
+
+    
+</body>
+</html>
